@@ -1,9 +1,12 @@
 # /usr/bin/python
 # encoding:utf-8
 
-mine_module_ids = ['iv_message', 'rl_mine_userInfo', 'tv_mine_articles', 'tv_mine_follow', 'rl_mine_fans',
-                   'mine_article_history', 'mine_listened', 'mine_scan_qr', 'mine_collection', 'mine_draft',
-                   'mine_video_buffer', 'rl_mine_edit', 'rl_mine_black_list', 'rl_mine_open_store',
-                   'rl_mine_setting']
+mine_module_ids = ['iv_search', 'iv_message', 'afd_mine_head', 'iv_setting', 'tv_follow_num', 'tv_fans_num',
+                   'iv_mine_article_history', 'iv_mine_collection', 'iv_mine_draft', 'iv_video_buffer']
 
-app_share_btn_ids = ['iv_share_moment', 'iv_share_wechat', 'iv_share_weibo', 'iv_share_qq', 'iv_share_qzone']
+vehicle_module_ids = ['tv_car_price', 'tv_car_rank', 'tv_more_condition', 'brand_image', 'afd_car_brand_image']
+
+car_condition_ids = ['tv_city_name', 'll_brand', 'll_price', 'll_level', 'll_more', 'tv_condition_name', 'image']
+
+car_topic_module_ids = ['id_pk_iv_vs', 'optionImage', 'ib_config', 'ib_follow', 'll_model', 'll_price',
+                        'll_relative_goods', 'll_pictures', 'll_tips', 'll_command', 'tv_sort']
