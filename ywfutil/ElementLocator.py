@@ -2,6 +2,7 @@
 # encoding:utf-8
 from DriverSetup import AndroidTestDriver
 from ywfutil.pylog import YwfLog as logger
+from ywfutil import getshots
 
 
 class LocatorController:
@@ -14,6 +15,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element with id %s cannot locate..' % element_id)
+            getshots.getScreenShots()
             return False
         finally:
             return element
@@ -26,6 +28,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element list with id %s cannot locate..' % elements_id)
+            getshots.getScreenShots()
             return False
         finally:
             return element_list
@@ -38,6 +41,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element with uiautomator %s cannot locate..' % uiautomator)
+            getshots.getScreenShots()
             return False
         finally:
             return element
@@ -50,6 +54,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element list with uiautomator %s cannot locate..' % uiautomators)
+            getshots.getScreenShots()
             return False
         finally:
             return element_list
@@ -62,6 +67,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element with className %s cannot locate..' % className)
+            getshots.getScreenShots()
             return False
         finally:
             return element
@@ -74,6 +80,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element list with className %s cannot locate..' % classesName)
+            getshots.getScreenShots()
             return False
         finally:
             return element_list
@@ -86,6 +93,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element with name %s cannot locate..' % name)
+            getshots.getScreenShots()
             return False
         finally:
             return element
@@ -98,6 +106,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element list with name %s cannot locate..' % names)
+            getshots.getScreenShots()
             return False
         finally:
             return element_list
@@ -110,6 +119,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element with xpath %s cannot locate..' % xpath)
+            getshots.getScreenShots()
             return False
         finally:
             return element
@@ -122,6 +132,7 @@ class LocatorController:
             return True
         except Exception:
             logger.debug('Element list with name %s cannot locate..' % xpaths)
+            getshots.getScreenShots()
             return False
         finally:
             return element_list
